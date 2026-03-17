@@ -13,7 +13,7 @@ namespace ButtonTesting
         public Form2(String name)
         {
             InitializeComponent();
-            NameOutput1.Text = Name;
+            NameOutput1.Text = name;
         }
 
         private void ReturnButton1_Click(object sender, EventArgs e)
