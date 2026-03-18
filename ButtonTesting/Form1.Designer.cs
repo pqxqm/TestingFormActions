@@ -31,6 +31,8 @@
             NextButton1 = new Button();
             NameLabel1 = new Label();
             NameInputText1 = new TextBox();
+            Option1 = new RadioButton();
+            Option2 = new RadioButton();
             SuspendLayout();
             // 
             // NextButton1
@@ -59,11 +61,35 @@
             NameInputText1.Size = new Size(369, 27);
             NameInputText1.TabIndex = 2;
             // 
+            // Option1
+            // 
+            Option1.AutoSize = true;
+            Option1.Location = new Point(66, 153);
+            Option1.Name = "Option1";
+            Option1.Size = new Size(101, 24);
+            Option1.TabIndex = 3;
+            Option1.TabStop = true;
+            Option1.Text = "God Mode";
+            Option1.UseVisualStyleBackColor = true;
+            // 
+            // Option2
+            // 
+            Option2.AutoSize = true;
+            Option2.Location = new Point(66, 183);
+            Option2.Name = "Option2";
+            Option2.Size = new Size(121, 24);
+            Option2.TabIndex = 4;
+            Option2.TabStop = true;
+            Option2.Text = "Human Mode";
+            Option2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(Option2);
+            Controls.Add(Option1);
             Controls.Add(NameInputText1);
             Controls.Add(NameLabel1);
             Controls.Add(NextButton1);
@@ -78,5 +104,7 @@
         private Button NextButton1;
         private Label NameLabel1;
         private TextBox NameInputText1;
+        private RadioButton Option1;
+        private RadioButton Option2;
     }
 }

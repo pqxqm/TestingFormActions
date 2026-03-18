@@ -30,6 +30,7 @@
         {
             ReturnButton1 = new Button();
             NameOutput1 = new Label();
+            ModeOutputLabel = new Label();
             SuspendLayout();
             // 
             // ReturnButton1
@@ -51,11 +52,21 @@
             NameOutput1.TabIndex = 1;
             NameOutput1.Text = "PLAYERS NAME";
             // 
+            // ModeOutputLabel
+            // 
+            ModeOutputLabel.AutoSize = true;
+            ModeOutputLabel.Location = new Point(157, 188);
+            ModeOutputLabel.Name = "ModeOutputLabel";
+            ModeOutputLabel.Size = new Size(101, 20);
+            ModeOutputLabel.TabIndex = 2;
+            ModeOutputLabel.Text = "Type of Mode";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(ModeOutputLabel);
             Controls.Add(NameOutput1);
             Controls.Add(ReturnButton1);
             Name = "Form2";
@@ -68,5 +79,6 @@
 
         private Button ReturnButton1;
         private Label NameOutput1;
+        private Label ModeOutputLabel;
     }
 }
